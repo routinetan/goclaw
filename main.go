@@ -36,7 +36,7 @@ func main() {
 // Based on: https://colobu.com/2016/12/21/how-to-dump-goroutine-stack-traces/
 func setupStackDumpSignal() {
 	ch := make(chan os.Signal, 1)
-	notifyStackDumpSignal(ch)
+	//notifyStackDumpSignal(ch)
 
 	go func() {
 		for range ch {
